@@ -38,6 +38,7 @@ The dataset represents a classic text classification problem. The key challenge 
 *Understanding the balance of data is key to model performance.* We emphasize data exploration through visualization. We use a **Pie Chart** to inspect the proportion of spam vs. ham messages. This visualization highlights the class imbalance, which informs our choice of evaluation metrics and splitting strategies.
 
 > ![Distribution](sms_type_pie_chart.png)
+>
 > *Figure 1: Distribution of SMS types showing the prevalence of Ham over Spam.*
 
 ## Tech Stack & Methods
@@ -46,7 +47,7 @@ The dataset represents a classic text classification problem. The key challenge 
 | :--- | :--- | :--- |
 | **Data Processing** | Pandas | Loading CSV, Data Inspection (`value_counts`) |
 | **Visualization** | Matplotlib | Custom Pie Chart to visualize Class Distribution |
-| **NLP / Preprocessing** | Scikit-Learn | `CountVectorizer` (Bag of Words technique) |
+| **NLP / Preprocessing** | Scikit-Learn | `TfidfVectorizer` (Bag of Words technique) |
 | **Modeling** | Scikit-Learn | **Logistic Regression** for binary classification |
 | **Evaluation** | Scikit-Learn | `accuracy_score` on Train/Test splits |
 
@@ -55,8 +56,8 @@ To replicate this analysis on your local machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/sms-spam-detector.git](https://github.com/your-username/sms-spam-detector.git)
-    cd sms-spam-detector
+    git clone [https://github.com/marta23-10/easy-spam-ham-classification.git](https://github.com/marta23-10/easy-spam-ham-classification.git)
+    cd easy-spam-ham-classification
     ```
 2.  **Install required libraries:**
     ```bash
@@ -64,7 +65,7 @@ To replicate this analysis on your local machine:
     ```
 3.  **Run the script:**
     ```bash
-    python sms_spam_classifier.py
+    python ham_or_spam.ipynb
     ```
 
 ##  Project Roadmap
@@ -77,14 +78,14 @@ This project follows a structured data science lifecycle:
     - visualizing class distribution with Matplotlib.
     - Identifying the "Ham" vs "Spam" ratio.
 - [x] **Phase 3: Preprocessing**
-    - Converting text to numbers using `CountVectorizer`.
+    - Converting text to numbers using `TfidfVectorizer`.
     - Splitting data into Training and Testing sets with stratification.
 - [x] **Phase 4: Predictive Modeling**
     - Training a **Logistic Regression** model.
     - Evaluating performance (Accuracy Score).
 
 ##  Contributing
-Contributions are welcome! If you have ideas for better text preprocessing (like TF-IDF) or new models:
+Contributions are welcome! If you have ideas for better text preprocessing or new models:
 1.  Fork the repo.
 2.  Create your feature branch.
 3.  Submit a Pull Request.
