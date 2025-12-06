@@ -10,7 +10,7 @@
 
 <br />
 
-**[ Explore the Code ](sms_spam_classifier.py) • [ View the Data ](sms_spam.csv) • [ Report Bug ](issues)**
+**[ Explore the Code ](ham_or_spam.ipynb) • [ View the Data ](data/sms_spam.csv) • [ Report Bug ](issues)**
 
 </div>
 
